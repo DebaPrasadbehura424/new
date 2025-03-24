@@ -28,15 +28,6 @@ const userSchema = new mongoose.Schema({
 });
 const User = mongoose.model("users", userSchema);
 
-app.use(
-  express.static("dist", {
-    setHeaders: (res, path) => {
-      if (path.endsWith(".js")) {
-        res.setHeader("Content-Type", "application/javascript");
-      }
-    },
-  })
-);
 app.get("/", (req, res) => {
   res.send("all are good ");
 });
