@@ -49,6 +49,15 @@ app.post("/users", async (req, res) => {
   }
 });
 
+app.get("/allusers", async (req, res) => {
+  try {
+    const users = await User.find();
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
 app.listen(5001, () => {
   console.log(`Server is running on http://localhost:${5001}`);
 });

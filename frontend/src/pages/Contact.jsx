@@ -30,59 +30,52 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
-      <h2>Create User</h2>
+    <div className="w-full max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
+      <h2 className="text-2xl font-semibold text-center text-black mb-6">
+        Create User
+      </h2>
       <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Username:</label>
+        <div className="mb-4">
+          <label className="block text-black text-sm font-medium mb-2">
+            Username:
+          </label>
           <input
             type="text"
             name="username"
             value={formData.username}
             onChange={handleChange}
             required
-            style={{
-              display: "block",
-              width: "100%",
-              padding: "8px",
-              marginTop: "5px",
-            }}
+            className="w-full p-2 border border-gray-300 rounded-md text-black"
           />
         </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Contact Number:</label>
+        <div className="mb-4">
+          <label className="block text-black text-sm font-medium mb-2">
+            Contact Number:
+          </label>
           <input
             type="text"
             name="contactnumber"
             value={formData.contactnumber}
             onChange={handleChange}
             required
-            style={{
-              display: "block",
-              width: "100%",
-              padding: "8px",
-              marginTop: "5px",
-            }}
+            className="w-full p-2 border border-gray-300 rounded-md text-black"
           />
         </div>
-        <div style={{ marginBottom: "15px" }}>
-          <label>Description:</label>
+        <div className="mb-4">
+          <label className="block text-black text-sm font-medium mb-2">
+            Description:
+          </label>
           <textarea
             name="description"
             value={formData.description}
             onChange={handleChange}
             required
-            style={{
-              display: "block",
-              width: "100%",
-              padding: "8px",
-              marginTop: "5px",
-            }}
+            className="w-full p-2 border border-gray-300 rounded-md text-black"
           />
         </div>
         <button
           type="submit"
-          style={{ padding: "10px 20px", cursor: "pointer" }}
+          className="w-full py-2 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition"
         >
           Submit
         </button>
