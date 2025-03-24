@@ -17,9 +17,10 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5001/users",
+        "https://new-backend-azure.vercel.app/users",
         formData
       );
+
       alert("User submitted successfully!");
       console.log(response.data);
     } catch (error) {
