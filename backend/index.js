@@ -6,7 +6,14 @@ const mongoose = require("mongoose");
 const app = express();
 const dotnev = require("dotenv").config();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://new-forntend-theta.vercel.app",
+    credentials: true,
+    methods: ["POST", "GET"],
+    allowedHeaders: "*",
+  })
+);
 
 app.use(express.json());
 app.use(bodyParser.json());
