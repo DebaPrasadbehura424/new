@@ -7,6 +7,7 @@ const Contact = () => {
     contactnumber: "",
     description: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,14 +16,15 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await axios.post(
         "https://new-backend-azure.vercel.app/users",
         formData
       );
 
+      setLoading(false);
       alert("User submitted successfully!");
-      console.log(response.data);
     } catch (error) {
       console.error("Error submitting user:", error);
       alert("Failed to submit user.");
@@ -45,6 +47,7 @@ const Contact = () => {
             value={formData.username}
             onChange={handleChange}
             required
+            autoComplete="off"
             className="w-full p-2 border border-gray-300 rounded-md text-black"
           />
         </div>
@@ -58,6 +61,7 @@ const Contact = () => {
             value={formData.contactnumber}
             onChange={handleChange}
             required
+            autoComplete="off"
             className="w-full p-2 border border-gray-300 rounded-md text-black"
           />
         </div>
@@ -77,7 +81,7 @@ const Contact = () => {
           type="submit"
           className="w-full py-2 bg-black text-white font-semibold rounded-md hover:bg-gray-800 transition"
         >
-          Submit
+          {loading ? "loading..." : " Submit"}
         </button>
       </form>
     </div>
