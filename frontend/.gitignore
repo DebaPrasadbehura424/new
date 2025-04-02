@@ -25,7 +25,6 @@ dist-ssr
 
 build/
 
-# Vercel or local environment
 .env
 .vercel/
 

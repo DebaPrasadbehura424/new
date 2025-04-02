@@ -6,7 +6,6 @@ npm-debug.log*
 dist/
 build/
 
-# Vercel or local environment
 .env
 .vercel/
 

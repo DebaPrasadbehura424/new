@@ -3,10 +3,11 @@ import React from "react";
 function Projects() {
   const projectData = [
     {
-      name: "Project 1",
-      description: "A brief description of Project 1.",
-      technologies: "React, Tailwind CSS, Node.js",
-      link: "https://example.com/project1",
+      name: "Online Exam Portal",
+      description:
+        "Helps to create questionPaper ans student can attend them and follow there fav. teachers",
+      technologies: "React, Tailwind CSS, Node.js,Mongodb",
+      link: "https://online-exam-forntendnode.vercel.app",
     },
     {
       name: "Project 2",
