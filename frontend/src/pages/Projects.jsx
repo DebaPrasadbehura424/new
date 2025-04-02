@@ -13,7 +13,7 @@ function Projects() {
       name: "Project 2",
       description: "A brief description of Project 2.",
       technologies: "React, Express, MongoDB",
-      link: "https://example.com/project2",
+      link: "https://example.com/projec",
     },
     {
       name: "Project 3",
