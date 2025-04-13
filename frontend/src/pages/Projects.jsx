@@ -15,51 +15,33 @@ function Projects() {
       technologies: "React, Tailwind CSS, Node.js,Mongodb ,Springboot",
       link: "https://athletiqo-frontend.vercel.app",
     },
-    {
-      name: "Project 3",
-      description: "A brief description of Project 3.",
-      technologies: "Vue.js, Vuetify, Firebase",
-      link: "https://example.com/project3",
-    },
-    {
-      name: "Project 4",
-      description: "A brief description of Project 4.",
-      technologies: "Angular, TypeScript, Bootstrap",
-      link: "https://example.com/project4",
-    },
-    {
-      name: "Project 5",
-      description: "A brief description of Project 5.",
-      technologies: "Next.js, Tailwind CSS, Prisma",
-      link: "https://example.com/project5",
-    },
-    {
-      name: "Project 6",
-      description: "A brief description of Project 6.",
-      technologies: "React, Redux, Firebase",
-      link: "https://example.com/project6",
-    },
   ];
 
   return (
-    <div className="bg-[#181818] text-white py-12 w-full h-auto  md:h-screen">
-      <h2 className="text-4xl font-semibold text-center mb-8">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+    <div className="bg-slate-50 text-slate-900 py-16 w-full min-h-screen flex flex-col items-center">
+      <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 text-center mb-12">
+        My Projects
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-8 max-w-7xl">
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-800 p-6 rounded-xl shadow-md transition-transform transform hover:scale-105"
+            className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
-            <h3 className="text-2xl font-semibold mb-4">{project.name}</h3>
-            <p className="text-gray-400 mb-4">{project.description}</p>
-            <p className="text-gray-500 mb-4">
+            <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+              {project.name}
+            </h3>
+            <p className="text-slate-600 text-base mb-4">
+              {project.description}
+            </p>
+            <p className="text-slate-700 text-sm font-medium mb-4">
               <strong>Technologies Used:</strong> {project.technologies}
             </p>
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-600 transition-colors"
+              className="inline-block text-teal-500 font-semibold hover:text-teal-600 transition-colors duration-300"
             >
               View Live Project
             </a>
