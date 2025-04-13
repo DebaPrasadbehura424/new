@@ -6,14 +6,14 @@ function Projects() {
       name: "Online Exam Portal",
       description:
         "Helps to create questionPaper ans student can attend them and follow there fav. teachers",
-      technologies: "React, Tailwind CSS, Node.js,Mongodb",
+      technologies: "React, Tailwind CSS, Node.js,Mongodb ,Springboot",
       link: "https://online-exam-forntendnode.vercel.app",
     },
     {
-      name: "Project 2",
-      description: "A brief description of Project 2.",
-      technologies: "React, Express, MongoDB",
-      link: "https://example.com/projec",
+      name: "Athletiqo",
+      description: "Online ecommerce and fitness application",
+      technologies: "React, Tailwind CSS, Node.js,Mongodb ,Springboot",
+      link: "https://athletiqo-frontend.vercel.app",
     },
     {
       name: "Project 3",
