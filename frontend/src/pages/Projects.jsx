@@ -15,6 +15,12 @@ function Projects() {
       technologies: "React, Tailwind CSS, Node.js,Mongodb ,Springboot",
       link: "https://athletiqo-frontend.vercel.app",
     },
+    {
+      name: "MilkyWay",
+      description: "Online Quiz page over 1500+ quiz on programming",
+      technologies: "React, Tailwind CSS,famer-motion",
+      link: "https://millkway-frontend.vercel.app",
+    },
   ];
 
   return (
