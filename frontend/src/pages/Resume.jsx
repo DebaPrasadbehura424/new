@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "../images/img1.png";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -66,7 +67,7 @@ const Resume = () => {
         <div className="bg-slate-900 text-white py-8 px-6 sm:px-10 flex flex-col sm:flex-row items-center gap-6">
           <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-slate-300 flex items-center justify-center overflow-hidden">
             <span className="text-slate-600 text-sm sm:text-base">
-              Add Photo
+              <img src={img1} alt="myphot" />
             </span>
           </div>
           <div className="text-center sm:text-left">
