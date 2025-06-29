@@ -22,7 +22,7 @@ function Projects() {
       link: "https://millkway-frontend.vercel.app",
     },
     {
-      name: "",
+      name: "Preptail",
       description: "Preptail over 170 dsa question suggestion",
       technologies: "React, Tailwind CSS, Node.js,Mongodb",
       link: "https://placement-frontend-theta.vercel.app",
