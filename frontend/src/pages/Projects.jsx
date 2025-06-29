@@ -21,6 +21,12 @@ function Projects() {
       technologies: "React, Tailwind CSS,famer-motion",
       link: "https://millkway-frontend.vercel.app",
     },
+    {
+      name: "",
+      description: "Preptail over 170 dsa question suggestion",
+      technologies: "React, Tailwind CSS, Node.js,Mongodb",
+      link: "https://placement-frontend-theta.vercel.app",
+    },
   ];
 
   return (
