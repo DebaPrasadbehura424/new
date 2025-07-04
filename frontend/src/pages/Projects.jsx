@@ -27,6 +27,13 @@ function Projects() {
       technologies: "React, Tailwind CSS, Node.js,Mongodb",
       link: "https://placement-frontend-theta.vercel.app",
     },
+    {
+      name: "Smooth-Email",
+      description: "Email replyer and multi language and tone ",
+      technologies: "React, Tailwind CSS, Node.js,Mongodb,Gemini Api",
+      link: "    https://email-replyer-frontend.vercel.app",
+    },
+
   ];
 
   return (
