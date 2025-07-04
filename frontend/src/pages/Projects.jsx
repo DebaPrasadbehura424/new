@@ -31,7 +31,7 @@ function Projects() {
       name: "Smooth-Email",
       description: "Email replyer and multi language and tone ",
       technologies: "React, Tailwind CSS, Node.js,Mongodb,Gemini Api",
-      link: "    https://email-replyer-frontend.vercel.app",
+      link: "https://email-replyer-frontend.vercel.app",
     },
 
   ];
